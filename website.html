@@ -1,0 +1,93 @@
+<!-- Author: Yezen Hijazin
+Date: winter break 2022
+Description: Created a website over winter break 2022 purely through chatGPT to test how far the AI can take me. 
+Up to this point I had no knowledge and experience in html/CSS/Javascript. -->
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <title>Yezen Hijazin's cool website/resume</title>
+  </head>
+<html>
+
+<head>
+  <style>
+    .tab {
+      display: inline-block;
+      float: left;
+      padding: 10px;
+      background-color: lightgrey;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      background-color: grey;
+    }
+
+    .tab.active {
+      background-color: grey;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+  <script>
+    function openTab(event, tabName) {
+      // Get all elements with class "tab" and "tab-content"
+      var tabs = document.getElementsByClassName("tab");
+      var tabContents = document.getElementsByClassName("tab-content");
+
+      // Hide all tab contents
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active");
+      }
+
+      // Remove the "active" class from all tabs
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
+
+      // Show the current tab and add the "active" class
+      document.getElementById(tabName).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+</head>
+
+<body>
+  <div class="tabs">
+    <div class="tab" onclick="openTab(event, 'tab1')">Me, Me, and Me</div>
+    <div class="tab" onclick="openTab(event, 'tab2')">More about me</div>
+    <div class="tab" onclick="openTab(event, 'tab3')">little about you</div>
+  </div>
+  <div id="tab1" class="tab-content active">
+
+
+<body style="background-image: url('back3.jpeg'); background-size: cover;">
+<h1 style="color: black; text-align: center;">Yezen Hijazin's cool website/resume</h1>
+
+    <p>My resume.</p>
+    <ul>
+      <li><a href="https://docs.google.com/document/d/1t7SmzegWwqtvAc2RhiWBlw-Qz5XH81y4/edit?usp=sharing&ouid=117318471982329281598&rtpof=true&sd=true">My resume</a></li>
+    </ul>
+    <p>A little about me:</p>
+    <p>I love inventing. Creating and innovation is the backbone to why I'm a Computer engineering major at A&M. Though products I can find a way to make a consumer's day better or funner. This is what I do. </p>
+    <p>I love learning new things and acting on it. For example this website actually started out as a question I gave to an AI called "chatGPT" where I asked it to code a simple website and how I can implement it in real life Also I have never coded in html in my life.</p>
+    <img src="chatgpt_PIC.png" alt="Italian Trulli">
+  </body>
+
+  </div>
+  <div id="tab2" class="tab-content">
+    <h2>Tab 2 Content</h2>
+    <p>This is the content for tab 2.</p>
+  </div>
+  <div
+</html>
